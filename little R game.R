@@ -4,18 +4,18 @@ lat <- round(lat,1)
 lon <- round(lon,1)
 
 choice_lat<- ""
-score <- 0
+score_lat <- 0
 while(choice_lat!=lat){
   choice_lat <- readline(prompt = "guess lat : ")
   if(choice_lat == lat){
     print("well done! ")
-    print(paste("your score is ",score))
+    print("now guess lon")
   }else if (choice_lat > lat){
     print("less")
-    score <- score + 1
+    score-lat <- score_lat + 1
   }else{
     print("more")
-    score <- score + 1
+    score_lat <- score_lat + 1
   }
 }
 
